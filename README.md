@@ -1,29 +1,44 @@
-## About
-**contesapp** is a simple flutter application.
-It shows how to perform * **App paint** for Dart.
+# connecthealth
 
-1. Add images to the paint content of the application.
-2. Remove pictures, remove paint strokes and replace new photos easily.
-3. Save the painted image into the device's photos.
-4. Increase the size of the paint color.
-5. Select the color that matches the color list available in the application
+A new Flutter project.
 
-## Project structure
-***image_picker_saver: ^ 0.1.0** framework used to save images to photos image.
-* **main.dart** is the place to perform all functions of the application with a capacity of 4970kB.
-* **CustomPainter** class implementing painter is inherited and developed.
-* **Simple UI** uses attributes available in Dart.
+## Getting Started
+#####
+# Patient.
 
-## Demo
- ![Android***``***](https://youtu.be/UjzfVtiP4Ko)
+* 1. [SCREEN] **Tìm kiếm bác sỹ** ở vị trí gần nhất dự theo các thông tin liên quan
+  * Ở màn hình này sẽ thống kê lại các **Bác Sỹ** ở vi trí gần bệnh nhân , dự vào các chỉ số thông tin đánh giá mức độ tin cậy. Bên ứng dụng sẽ tính toán và giới thiệu cho bệnh nhân **Bác Sỹ** liên quan này sao đó 
+  sẽ hiển thị lên màn hình. **Bệnh Nhân** dựa theo các thông tin sẽ chọn liên lạc với **Bác Sỹ**
+  sau đó sẽ gửi kết quả từ form đăng ký khám bệnh cũng như nội dung bệnh cần khám là gì với **Bác Sỹ** tương ứng.
+  
+* 2. [SCREEN] **Tìm kiếm bệnh viện** ở đây sẽ hiển thị thông tin các bệnh viện trong khu vực dựa theo vị trí của bệnh nhân 
+(thông tin bệnh viện , sđt liên hệ ...)
 
-## Summary
-* **Android** application has changed icon and screen launch. Check and run.
-* **IOS** still the flutter icon data checked and running.
+* 3. [SCREEN] **Kết nối bệnh nhân**  ở màn hình này giống như một mạng forum thu nhỏ để mọi người trao đổi kinh nghiệm khám bệnh ở **Bác Sỹ** nào hay, bệnh viện nào tốt cho từng căn bệnh.
 
-## Perform ##################
+* 4. [SCREEN] **Theo dõi sức khoẻ** ở màn hình này sẽ theo dõi tình hình bệnh của bệnh nhân dựa theo các chỉ số kiểm tra khi đi khám.
 
-* **LE HOANG VU**
-* **toitenlavu93@gmail.com**
+* 5. [SCREEN] **Lịch sử khám bệnh** ở màn hình này sẽ theo dõi các lịch sử đi khám bệnh , thông báo nhắc nhở đến thời gian đi khám bệnh.
 
-## ##################
+* 6. [SCREEN] **cài đặt app** cài đặt các tính năng của hệ thống.
+
+#####
+# Doctor.
+
+* [SCREEN] **Quản lý ** ở màn hình này sẽ quản lý các lịch hẹn, khám chữa bệnh của bệnh nhân đã gưỉ lên.
+
+##
+------------ | -------------
+> Trong ứng dụng có cài các ckages free của flutter.
+> Hiện tại app mới dừng lại ở chỗ làm các màn hình chính [1,2,3] đây là ý tưởng 
+nhằm mục đích thự hiện hiện việc kết nối dựa **Bệnh Nhân** và **Bác sỹ**
+một cách nhanh và tiện lợi nhất thông qua các thông tin thu thập được.
+> Ứng dụng cũng mục đích xây dựng một cộng đồng những người mắc các bệnh hiếm gặp và là nơi 
+chia sẽ kinh nghiệm khám chữa bệnh.
+
+** Theo tiêu chí của cuộc thi .
+- **"Giải quyết các vấn đề liên quan đến địa phương"**
+- ==> Ứng dụng có thể chưa hoàn thành.
+
+* lê hoàng vũ.
+* gmail : hoangvu9147@gmail.com

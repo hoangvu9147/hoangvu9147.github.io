@@ -1,0 +1,59 @@
+
+##################0o0###################
+Quick Communication Doctor Patients ---> Quick Search Connect Health --- quickhealth --- connect health
+2. ----- App Doctor connect Patients with server on Firebase of Google
+(ứng dụng kết nối Bác sỹ và bệnh nhân)
+
+B1:
+1: Main:
+- Xác định vị trí hiện tại bệnh nhân.(API )
+
+// ########## ---- Dummy Data set firebase(dữ liệu giả)
+- Show Danh sách Bác sỹ hiện có trên hệ thống (bệnh viện gần trong khu vực).
+- Chọn 1 bác sỹ or bệnh viện muốn khám .
+ + Bác sỹ: Show các thông tin của đối đượng (dummy data)
+  . tên , tuổi , image, vị trí công việc , chuyên môn ...
+
+ + Bệnh viện :  Show info
+  . tên , vị trí, các thông tin chi tiết
+  ( có thể chọn các  Khoa làm việc trong bệnh viện .... )
+
+  ===> đo khoảng cách từ bệnh nhân đến (vị trí muốn đên "bác sỹ or bệnh viện") gần nhất.
+  ** chỉ định hẹn giờ để chốt lịch khám bệnh.
+  ** Các thông tin sau khi đã nhập được lưu lại và gửi đến cho Bác Sỹ hoặc người liên quan trong bệnh Viện.
+
+  *** Sau khi gửi thành công thì bệnh nhân sẽ nhận đc 1 phiếu hẹn khám bệnh của BS ỏ BV.
+
+B2: Nếu TH lần sau đến khám sẽ lưu lại thông tin của bệnh nhân đó (vd : BN A đã khám tại đây lần n...)
+- Và tiếp tục thực hiện các thao tác như bước 1.
+
+
+
+
+Install APi google route
+1. -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

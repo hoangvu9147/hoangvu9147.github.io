@@ -1,4 +1,4 @@
-name: contestapp
+name: connecthealth
 description: A new Flutter project.
 
 # The following defines the version and build number for your application.
@@ -6,8 +6,15 @@ description: A new Flutter project.
 # followed by an optional build number separated by a +.
 # Both the version and the builder number may be overridden in flutter
 # build by specifying --build-name and --build-number, respectively.
-# Read more about versioning at semver.org.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
 version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -16,7 +23,21 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  image_picker_saver: ^0.1.0
+  firebase_auth: ^0.15.0+1
+  google_sign_in: ^4.0.14
+  percent_indicator: ^2.1.1
+  cloud_firestore: ^0.11.0+2
+  # Add thong tin voi android hien tai phien ban nay dang lam ios
+  google_maps_flutter: ^0.5.21+13
+  font_awesome_flutter: ^8.2.0
+  location: ^2.3.5
+  http: ^0.12.0+2
+  flutter_tags: ^0.4.5
+  webview_flutter: ^0.3.14+1
+
+
+#  map_view: "^0.0.14"
+#  google_maps_webservice: ^0.0.6
 
 dev_dependencies:
   flutter_test:
@@ -24,7 +45,7 @@ dev_dependencies:
 
 
 # For information on the generic Dart part of this file, see the
-# following page: https://www.dartlang.org/tools/pub/pubspec
+# following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
 flutter:
@@ -36,38 +57,36 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - f/0.png
-     - f/1.png
-     - f/2.png
-     - f/3.png
-     - f/4.png
-     - f/5.png
-     - f/6.png
-     - f/7.png
-     - f/8.png
-     - f/9.png
-     - f/10.png
-     - f/11.png
-     - f/12.png
-     - f/13.png
-     - f/14.png
-     - f/er.png
+    - assets/logo.png
+    - assets/image_1.jpg
+    - assets/image_2.jpg
+    - assets/image_3.jpg
+    - assets/bg_Doctor.png
+    - assets/ic_doctor.png
+    - assets/ic_patient.png
+    - assets/img_hospitall.jpeg
+    - assets/1.png
+    - assets/2.png
+    - assets/3.png
+    - assets/4.png
+    - assets/5.png
+    - assets/6.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.io/assets-and-images/#resolution-aware.
+  # https://flutter.dev/assets-and-images/#resolution-aware.
 
   # For details regarding adding assets from package dependencies, see
-  # https://flutter.io/assets-and-images/#from-packages
+  # https://flutter.dev/assets-and-images/#from-packages
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/Montserrat-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro
@@ -76,5 +95,6 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+  #
   # For details regarding fonts from package dependencies,
-  # see https://flutter.io/custom-fonts/#from-packages
+  # see https://flutter.dev/custom-fonts/#from-packages
