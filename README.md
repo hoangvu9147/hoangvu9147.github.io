@@ -25,11 +25,11 @@ A new Flutter project.
 #####
 # Doctor.
 
-* [SCREEN] **Quản lý ** ở màn hình này sẽ quản lý các lịch hẹn, khám chữa bệnh của bệnh nhân đã gưỉ lên.
+* [SCREEN] **Quản lý** ở màn hình này sẽ quản lý các lịch hẹn, khám chữa bệnh của bệnh nhân đã gưỉ lên.
 
 ##
 ------------ | -------------
-> Trong ứng dụng có cài các ckages free của flutter.
+> Trong ứng dụng có cài các packages free của flutter.
 > Hiện tại app mới dừng lại ở chỗ làm các màn hình chính [1,2,3] đây là ý tưởng 
 nhằm mục đích thự hiện hiện việc kết nối dựa **Bệnh Nhân** và **Bác sỹ**
 một cách nhanh và tiện lợi nhất thông qua các thông tin thu thập được.
@@ -38,7 +38,7 @@ chia sẽ kinh nghiệm khám chữa bệnh.
 
 ** Theo tiêu chí của cuộc thi .
 - **"Giải quyết các vấn đề liên quan đến địa phương"**
-- ==> Ứng dụng có thể chưa hoàn thành.
+- ==> Ứng dụng kết nối **Bác Sỹ** và **Bệnh Nhân**.
 
 * lê hoàng vũ.
 * gmail : hoangvu9147@gmail.com
